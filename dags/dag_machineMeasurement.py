@@ -17,7 +17,7 @@ import logging
 
 # Configurações padrão da DAG
 default_args = {
-    'owner': 'Iguaçu Máquinas',
+    'owner': 'Null',
     'depends_on_past': False,
     'start_date': days_ago(1),
     'email_on_failure': False,
@@ -39,15 +39,12 @@ def Processo_machineMeasurement():
     def ETL_imagens(total_regs):
         intervalos = []
 
-        """
         if datetime.today().day == 1:
             TPO_EXEC = "FULL"
             primeiro_ultimo_dia_mes(intervalos)
         else:
             TPO_EXEC = "DIA"
             primeiro_ultimo_dia_mes_atual(intervalos)
-        """
-        primeiro_ultimo_dia_mes(intervalos)
 
         logging.info("Intervalos gerados.")
 

@@ -17,7 +17,7 @@ from scripts.webhook_files.aux.dicts import formatacao_dict
 
 # Configurações padrão da DAG
 default_args = {
-    'owner': 'Iguaçu Máquinas',
+    'owner': 'Null',
     'depends_on_past': False,
     'start_date': days_ago(1),
     'email_on_failure': False,

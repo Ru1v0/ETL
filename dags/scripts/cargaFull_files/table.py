@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime
 from oracledb import DatabaseError
 from dags.scripts.cargaFull_files.dicts import url_tabelas, select_tables, url_valores, recordPath_dict, params_dict ,meta_dict, include_column_dict, remove_column_dict, stage_include_dict
-from configs.database import Autonomous
+from dags.configs.database import Autonomous
 
 
 class Table():

@@ -17,7 +17,7 @@ import os
 
 # Configurações padrão da DAG
 default_args = {
-    'owner': 'Iguaçu Máquinas',
+    'owner': 'Null',
     'depends_on_past': False,
     'email_on_failure': False,
     'email_on_retry': False,

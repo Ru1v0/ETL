@@ -48,11 +48,10 @@ def verificar_autenticacao(request_header) -> str:
 
 app = Flask(__name__)
 
-#END POINT: https://dw.iguacumaquinas.com.br:6001
 
 #===================================================================================================#
 
-@app.route("/webhookcallback/fieldOperationApplication", methods = ["POST"])
+@app.route("/rota/rota", methods = ["POST"])
 def fop_app():
     if verificar_autenticacao(request.headers) == "Success":
         processar_request(request, "fop_app")
@@ -60,7 +59,7 @@ def fop_app():
 
     return (401)
 
-@app.route("/webhookcallback/fieldOperationHarvest", methods = ["POST"])
+@app.route("/rota/rota", methods = ["POST"])
 def fop_har():
     if verificar_autenticacao(request.headers) == "Success":
         processar_request(request, "fop_har")
@@ -68,7 +67,7 @@ def fop_har():
 
     return (401)
 
-@app.route("/webhookcallback/fieldOperationSeeding", methods = ["POST"])
+@app.route("/rota/rota", methods = ["POST"])
 def fop_see():
     if verificar_autenticacao(request.headers) == "Success":
         processar_request(request, "fop_see")
@@ -76,7 +75,7 @@ def fop_see():
 
     return (401)
 
-@app.route("/webhookcallback/fieldOperationTillage", methods = ["POST"])
+@app.route("/rota/rota", methods = ["POST"])
 def fop_til():
     if verificar_autenticacao(request.headers) == "Success":
         processar_request(request, "fop_til")
