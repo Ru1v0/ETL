@@ -1,0 +1,17 @@
+pandas
+pyarrow
+openpyxl
+fastparquet
+python-dotenv
+
+Flask
+requests
+requests_oauthlib
+
+sqlalchemy
+cx_Oracle
+apache-airflow-providers-oracle
+
+selenium
+selenium-wire
+webdriver-manager
